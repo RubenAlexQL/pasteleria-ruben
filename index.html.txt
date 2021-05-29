@@ -1,0 +1,146 @@
+<! DOCTYPE html>
+<html lang = "en" dir = "ltr">
+
+<cabeza>
+ 
+  <title> Maggiec: horneado y magdalenas </title>
+</head>
+
+<cuerpo>
+
+  <! - Recuerda ponerle autoplay a audio ->
+ <audio autoplay src = "audio.mp3"> </audio>
+  <header id = "header">
+    <nav id = "nav-bar">
+      <img src = "imagen" id = "header-img">
+      <ul id = "barra de enlaces">
+        <li class = "nav-link"> <a href="#main" class="nav-link">
+            Acerca de </a> </li>
+
+        <li class = "nav-link"> <a href="#gallery-div" class="nav-link"> Galería </a> </li>
+
+        <li class = "nav-link"> <a href="#prices" class="nav-link"> Precios </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main id = "main">
+
+    <h2 id = "service-h2"> Podemos simplemente describir nuestros servicios así: </h2>
+
+    <div class = "service_container">
+      <img src = "imagen" class = "service-img">
+      <div class = "service_div">
+        <h3 class = "service_title"> Especialización en cupcakes </h3>
+        <p class = "service_description">
+          Nuestros cupcakes son LEGENDARIOS. Cada bocado es un placer garantizado.
+          Tenemos un laboratorio de magdalenas para degustar todas las posibilidades. Tenemos diferentes
+          y uno para todos. Pregunte por alternativas sin gluten, veganas y sin azúcar.
+        </p>
+      </div>
+    </div>
+
+    <div class = "service_container">
+      <img src = "imagen.jpg" class = "service-img">
+      <div class = "service_div">
+        <h3 class = "service_title"> Panadería miscelánea </h3>
+        <p class = "service_description">
+          Hojaldre, pan dulce, rosquillas, galletas, tartas ...
+          Servimos a tu pedido. Si no sabes que hacer
+          solicite a nuestro cajero que organice sus eventos o se adapte a sus necesidades.
+        </p>
+      </div>
+    </div>
+
+    <div class = "service_container">
+      <img src = "video.svg" class = "service-img">
+      <div class = "service_div">
+        <h3 class = "service_title"> Buenos precios por montura </h3>
+        <p class = "service_description">
+          Mas es menos. Cada subida por montaje significa menos dinero por
+          cantidad. Cada pieza es menos costosa cuando tiene
+          hermanos. Dos pasteles son menos que uno.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <section id = "gallery-div">
+
+    <h2 id = "gallery-h2"> Un pequeño espectáculo de nuestros productos </h2>
+    <p id = "gallery-description"> Nuestros clientes satisfechos nos permiten mostrar sus excelentes productos </p>
+    <div class = "elemento-galería">
+      <video class = controles de "video">
+        <source src = "video.mp4" type = "video / mp4">
+      </video>
+      <sub class = "gallery-caption"> Se hornean algunas galletas </sub>
+    </div>
+
+    <div class = "elemento-galería">
+      <video class = controles de "video">
+        <source src = "audio.mp4" type = "video / mp4">
+      </video>
+      <sub class = "gallery-caption"> Un día en el congreso francés del chocolate </sub>
+    </div>
+
+    <figure class = "elemento-galería">
+      <img class = "gallery-img" src = "imagen.jpg" alt = "Gato comiendo pastel de cumpleaños">
+      <figcaption class = "gallery-caption">
+        Gato celebrando su cumpleaños con una de nuestras tartas.
+      </figcaption>
+    </figure>
+
+    <figure class = "elemento-galería">
+      <img class = "gallery-img" src = "imagennn.jpg" alt = "Muchos tipos de
+        tortas y cupcakes sobre una mesa ">
+      <figcaption class = "gallery-caption">
+        Un pequeño espectáculo a nuestras tartas y cupcakes
+      </figcaption>
+    </figure>
+
+    <figure class = "elemento-galería">
+      <img class = "gallery-img" src = "imagenn.jpg" alt = "Café, cupcakes y un libro">
+      <figcaption class = "gallery-caption">
+        Foto de un cliente satisfecho tomando el brunch.
+      </figcaption>
+    </figure>
+  </sección>
+
+  <section id = "precios">
+    <h2 id = "price-h2"> Precios </h2>
+    <div id = "price-element-div">
+      <div class = "price-element">
+        <h3 class = "Prices-title"> Por docena </h2>
+          <p> Para pequeñas piezas iguales (como cupcakes o galletas),
+            cada docena reducirá el costo total. </p>
+          <div> <button id = "button1" href = "# main" class = "price-button"> Más </button> </div>
+      </div>
+      <div class = "price-element">
+        <h3 class = "Prices-title"> Por pieza </h2>
+          <p> Si necesita un (o varios) detalles milimétricos
+            pieza, se cobrará individualmente. </p>
+          <div> <button id = "button2" href = "# main" class = "price-button"> Más </button> </div>
+      </div>
+
+      <div class = "price-element">
+        <h3 class = "Prices-title"> Por evento </h2>
+          <p> Si necesita cubrir todo en un evento,
+            contamos con un servicio de planificación de eventos para adaptarnos a tu
+            artículos de primera necesidad. Los precios incluyen mesas, sillas, decoración del sitio.
+            y toda la panadería para el evento. </p>
+          <div> <button id = "button3" href = "# main" class = "price-button"> Más </button> </div>
+      </div>
+    </div>
+  </sección>
+
+  <footer id = "footer-div">
+    <ul id = "pie de página">
+      <li class = "footer_link"> <a class="footer_link" href="#"> Privacidad </a> </li>
+      <li class = "footer_link"> <a class="footer_link" href="#"> Condiciones </a> </li>
+      <li class = "footer_link"> <a class="footer_link" href="#"> Contacto </a> </li>
+    </ul>
+    <span id = "copyright"> <sub id = "copyright"> © Copyright 2020, Maggiec ™ </sub> </span>
+  </footer>
+
+</body>
+
+</html>

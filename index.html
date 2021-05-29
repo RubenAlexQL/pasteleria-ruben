@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Repostería Rubén</title>
+  <link rel="icon"
+    href="data:image/png;base64,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">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab:7100,300,400,700&display=swap');
+
+    /*
+ Profe, esto se lo dedico.
+ Me emocionó mucho terminar mi proyecto.
+  */
+    h1,
+    h2,
+    h3 {
+      font-family: 'Lobster', cursive;
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+
+    h2 {
+      font-size: 2.5vw;
+    }
+
+    h3 {
+      font-size: 1.8vw;
+    }
+
+    p {
+      font-size: 1.5vw;
+    }
+
+    a,
+    li,
+    p,
+    ::placeholder,
+    input,
+    sub,
+    figcaption,
+    span,
+    button {
+      font-family: 'Roboto Slab', serif;
+      font-style: italic;
+    }
+
+    .nav-link {
+      text-decoration: none;
+    }
+
+    .title {
+      font-size: 1.5em;
+      margin: auto 0 auto 300px;
+      font-family: 'Lobster', cursive;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    body {
+      margin: 0;
+      background-color: #cdf8f6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #nav-bar {
+      font-size: 2vw;
+      display: flex;
+      width: 101%;
+      height: 14vh;
+      position: fixed;
+      top: -1%;
+      left: -1%;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #cdcff8;
+      z-index: 2;
+      font-weight: lighter;
+      transition: top 0.3s;
+    }
+
+    #header-img {
+      margin: 1%;
+      padding: 0.5% 2% 1% 2%;
+      width: 15vw;
+      height: 7.5vh;
+    }
+
+    #link-bar {
+      padding-right: 4%;
+      flex-grow: 1;
+      align-items: end;
+      justify-content: flex-end;
+      text-align: center;
+      display: inline-flex;
+    }
+
+    .nav-link {
+      margin: 1% 4%;
+      color: black;
+      font-size: 1.5vw;
+      font-weight: 400;
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10vh;
+      margin: 0 26%;
+    }
+
+    #service-h2 {
+      text-align: center;
+      background-color: #f6cdf8;
+    }
+
+    .service_container {
+      display: flex;
+      /* width: 100%; */
+      flex-direction: row;
+      margin: -1.5vh 0;
+      align-items: center;
+    }
+
+    .service-img {
+      width: 17.5%;
+      height: auto;
+      margin-right: 40px;
+    }
+
+    .service_div {
+      display: flex;
+      padding: 1% 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .service_title {
+      align-self: stretch;
+      text-align: flex-start;
+    }
+
+    .service_description {
+      text-align: justify;
+      width: 100%;
+      margin-bottom: 4%;
+    }
+
+    #gallery-div {
+      display: flex;
+      flex-grow: 4;
+      width: 80%;
+      flex-direction: column;
+      margin: auto 10%;
+      padding-top: 5%;
+    }
+
+    #gallery-h2 {
+      text-align: center;
+      background-color: #f6cdf8;
+      margin: auto 30%;
+    }
+
+    #gallery-description {
+      text-align: center;
+    }
+
+    .gallery-element {
+      grid-row: 1;
+      margin-bottom: 1%;
+    }
+
+    .video {
+      width: 100%;
+    }
+
+    .gallery-img {
+      width: 100%;
+    }
+
+    .gallery-caption {
+      font-size: 1.55vw;
+      font-weight: 300;
+      background-color: #f6cdf8;
+    }
+
+    #prices {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 3;
+      width: auto;
+      height: 120%;
+      padding-top: 5%;
+      margin: 30px 30px;
+    }
+
+    #price-element-div {
+      display: flex;
+    }
+
+    #price-h2 {
+      background-color: #f6cdf8;
+      margin: auto 30%;
+      text-align: center;
+      display: block;
+      flex-grow: 100%;
+      flex-wrap: wrap;
+      margin-bottom: 5%;
+    }
+
+    .price-element {
+      display: flex;
+      /* flex-shrink: 0; */
+      padding: 10px;
+      margin: 1%;
+      flex-direction: column;
+      border-radius: 5%;
+      max-width: 33.3%;
+      max-height: 30em;
+      background-color: rgba(222, 250, 249, 1);
+    }
+
+    .prices-title {
+      text-align: center;
+    }
+
+    .price-element p {
+      /* text-align: justify; */
+      display: block;
+      /* margin: 3vw; */
+    }
+
+    .price-button {
+      border: none;
+      width: 100%;
+      height: 3.5vw;
+      font-size: 1.6vw;
+      font-weight: 500;
+      background-color: #cdcff8;
+    }
+
+    .price-element div {
+      max-width: 220px;
+      width: 33%;
+      align-self: center;
+      margin-top: auto;
+    }
+
+
+
+    #footer-div {
+      position: relative;
+      padding: 10px;
+      text-align: right;
+      background: #567a78;
+    }
+
+    #footer ul {
+      margin-right: 1%;
+      text-align: right;
+      background: #567a78;
+    }
+
+    .footer_link {
+      display: inline-flex;
+      flex-direction: row;
+      margin-right: 1%;
+      flex-grow: 1;
+      text-decoration: none;
+      color: white;
+      font-size: 1.4vw;
+    }
+
+    #copyright sub,
+    span {
+      padding-bottom: 1%;
+      color: #bbc9c9;
+      display: inline-flex;
+      text-align: center;
+      font-size: 1.35vw;
+    }
+
+    @media (max-device-width: 800px) {
+      .nav-link a {
+        font-size: 4.2vw;
+      }
+
+      #header-img {
+        width: 22%;
+        height: auto;
+      }
+
+      h2 {
+        font-size: 6vw;
+      }
+
+      h3 {
+        font-size: 4vw;
+      }
+
+      #main {
+        padding-top: 10%;
+        margin: 0;
+      }
+
+      .service_container {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      #service-h2 {
+        margin: 0;
+      }
+
+      .service_div {
+        align-items: center;
+      }
+
+      .service_title {
+        text-align: center;
+      }
+
+      .service_description {
+        font-size: 3vw;
+        width: 100%;
+      }
+
+      .service-img {
+        width: 45%;
+      }
+
+      #gallery-div {
+        padding-top: 17%;
+        margin: 0% .2%;
+        width: 100%;
+      }
+
+      #gallery-h2 {
+        margin: auto 5%;
+      }
+
+      #prices {
+        padding-top: 15%;
+        margin: auto;
+      }
+
+      #price-element-div {
+        flex-direction: column;
+        margin-bottom: 5%;
+      }
+
+      .price-element {
+        max-width: 50%;
+        align-self: center;
+        border-radius: 5%;
+      }
+
+      .price-element p {
+        margin: 5% 10%;
+        /* padding-bottom: 10%; */
+        font-size: 2.7vw;
+      }
+
+      #button1,
+      #button2,
+      #button3 {
+        padding: 0%;
+        margin: 0% 0% 10% 0%;
+        font-size: 3.5vw;
+        height: auto;
+      }
+
+      #footer-div {
+        display: flex;
+        display: row;
+        margin: 0 0%;
+      }
+
+      #footer {
+        display: flex;
+      }
+
+      .footer_link {
+        font-size: 2.8vw;
+        flex-grow: 1;
+        margin-right: 1vw;
+      }
+
+      #copyright {
+        align-self: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+      }
+
+      #copyright sub {
+        font-size: 2.5vw;
+        margin: 3% 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Recuerda ponerle autoplay a audio-->
+  <audio autoplay src="https://dl.dropbox.com/s/4aummpqzb21ihv4/festin.mp3"></audio>
+  <header id="header">
+    <nav id="nav-bar">
+      <p class="title">Pasteles Rubén</p>
+      <ul id="link-bar">
+        <li class="nav-link"><a href="#main" class="nav-link">
+            Nosotros</a></li>
+
+        <li class="nav-link"><a href="#gallery-div" class="nav-link">Galería</a></li>
+
+        <li class="nav-link"><a href="#prices" class="nav-link">Precios</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <h2 id="service-h2">Nuestros servicios se describen como:</h2>
+
+    <div class="service_container">
+      <img src="https://dl.dropbox.com/s/b46oehfjuacfndp/Service%20icon%201.svg" class="service-img">
+      <div class="service_div">
+        <h3 class="service_title">Maestros del cupcake</h3>
+        <p class="service_description">
+          Cupcakes LEGENDARIOS. Cada mordida es puro placer.
+          Tenemos un laboratorio donde Rubén se come todos los pasteles. Tenemos uno
+          para cada uno. Pregunta por las alternativas sin gluten, veganas y sin azucar.
+        </p>
+      </div>
+    </div>
+
+    <div class="service_container">
+      <img src="https://dl.dropbox.com/s/dqyckzmcmdu2nb4/Service%20icon%202.svg" class="service-img">
+      <div class="service_div">
+        <h3 class="service_title">Todo tipo de repostería</h3>
+        <p class="service_description">
+          Hojaldra, pan dulce, galletas...
+          Tenemos lo que necesitas. Si no te decides,
+          preguntale al cajero sobre los paquetes que tenemos.
+        </p>
+      </div>
+    </div>
+
+    <div class="service_container">
+      <img src="https://dl.dropbox.com/s/igarwn38h3sd8j1/Service%20icon%203.svg" class="service-img">
+      <div class="service_div">
+        <h3 class="service_title">Excelentes precios al mayoreo</h3>
+        <p class="service_description">
+          Entre más pidas, menos te cuesta.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <section id="gallery-div">
+
+    <h2 id="gallery-h2">Estos son algunos de nuestros productos:</h2>
+    <p id="gallery-description">Nuestros clientes pueden corroborar con fotos:</p>
+    <div class="gallery-element">
+      <video class="video" controls>
+        <source src="https://dl.dropbox.com/s/560cj36a8vqr3it/Bake.mp4" type="video/mp4">
+      </video>
+      <sub class="gallery-caption">Algunos pastelitos siendo cocinados</sub>
+    </div>
+
+    <div class="gallery-element">
+      <video class="video" controls>
+        <source src="https://dl.dropbox.com/s/wigs69ufv89bbra/crepes.mp4" type="video/mp4">
+      </video>
+      <sub class="gallery-caption">Un día en el congreso del chocolate en Francia</sub>
+    </div>
+
+    <figure class="gallery-element">
+      <img class="gallery-img" src="https://dl.dropbox.com/s/tozktuiqg8406yb/cake-cat.jpg"
+        alt="Cat eating birthday's cake">
+      <figcaption class="gallery-caption">
+        Un gatito bonito festejando su cumple número miau.
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-element">
+      <img class="gallery-img" src="https://dl.dropbox.com/s/4ymhs6b3za1c3xp/cakes.jpg" alt="A lot of kind of
+        cakes and cupcakes over a table">
+      <figcaption class="gallery-caption">
+        Mira nuestros pasteles y cupcakes.
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-element">
+      <img class="gallery-img" src="https://dl.dropbox.com/s/iweughgjyu926xs/cakes-coffee.jpg"
+        alt="Coffee,cupcakes and a book">
+      <figcaption class="gallery-caption">
+        Clientes satisfechos en la merienda.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="prices">
+    <h2 id="price-h2">Precios</h2>
+    <div id="price-element-div">
+      <div class="price-element">
+        <h3 class="prices-title">Docena</h2>
+          <p>Bastante más economico que comprar individuales.</p>
+          <div><button id="button1" href="#main" class="price-button">Más</button></div>
+      </div>
+      <div class="price-element">
+        <h3 class="prices-title">Por pieza</h2>
+          <p>Cada cosa que sale de aquí es una obra de arte que hace el mismísimo Rubén.</p>
+          <div><button id="button2" href="#main" class="price-button">Más</button></div>
+      </div>
+
+      <div class="price-element">
+        <h3 class="prices-title">Por evento</h2>
+          <p>Nos dices que necesitas y nosotros nos acoplamos.
+            Globos, pasteles y cualquier cosa que necesites para cubrir la tenemos.
+          </p>
+          <div><button id="button3" href="#main" class="price-button">Más</button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer-div">
+    <ul id="footer">
+      <li class="footer_link"><a class="footer_link" href="#">Privacidad</a></li>
+      <li class="footer_link"><a class="footer_link" href="#">Terminos</a></li>
+      <li class="footer_link"><a class="footer_link" href="#">Contacto</a></li>
+    </ul>
+    <span id="copyright"><sub id="copyright">©Copyright 2021, Repostería Rubén XD™</sub></span>
+  </footer>
+
+</body>
+<script>
+  //Variables
+  let prevScrollpos = window.pageYOffset;
+
+  //Esto me lo copié porque la verdad no sé Javascript pero lo vi en una página
+
+  //Ocultar
+  window.setTimeout(function () {
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav-bar").style.top = "0";
+      } else {
+        document.getElementById("nav-bar").style.top = "-15%";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  }, 500);
+</script>
+
+</html>
